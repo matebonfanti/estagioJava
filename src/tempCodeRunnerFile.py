@@ -1,2 +1,2 @@
 
-        fibonacciRecursiva()
+        print("Opção inválida!")
