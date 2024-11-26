@@ -4,7 +4,7 @@ from funcoes.primosLinear import primosLinear
 from funcoes.primosRecursiva import primosRecursiva
 
 while True:
-    print("-------- Bem Vindo  --------------")
+    print("----------------------- Bem Vindo  -----------------------------")
     print("----------------------------------------------------------------")
     print("1 - Fibonacci")
     print("2 - Números Primos")
