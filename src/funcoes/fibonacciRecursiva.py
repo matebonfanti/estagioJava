@@ -1,3 +1,4 @@
+#Função de fibonacci recursiva, verifica 0 e 1, se nao retorna chamadando a função novamente
 def calculo(numero):
     if numero <= 0:
         return 0
@@ -6,6 +7,7 @@ def calculo(numero):
     else:
         return calculo(numero-1) + calculo(numero-2)
 
+#Menu com validação conforme enunciiado
 def fibonacciRecursiva():
 
     print("----------------------------------------------------------------")
@@ -16,6 +18,7 @@ def fibonacciRecursiva():
             break
         else:
             print("O número deve ser positivo")
-
+    #chama a função de fibonacci recursiva e salva resultado em 'fib'
     fib = calculo(num)
+    #Mostra resultado
     print(f"O Valor de fibonacci de {num} é {fib}.")

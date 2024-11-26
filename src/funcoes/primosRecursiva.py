@@ -1,3 +1,4 @@
+#Função que verifica se o número é primo, e retorna true ou false
 def checa_primo(num):
     for i in range(2, num + 1):
         primo = True
@@ -7,16 +8,22 @@ def checa_primo(num):
                 
     return primo
 
+#Função recursiva que gera lista de numeros primos até (Num)
 
 def lista_primos(num, p=2):
+    #Se o contador for maior que o numero escolhido, retorna vazio
     if p> num:
         return []
+    #se for primo, adiciona na lista, chama a função de novo e soma 1 no contador primo
     if checa_primo(p):
-        return [p] + lista_primos(num, p + 1) 
+        return [p] + lista_primos(num, p + 1)
+    #se não for primo, chama a função de novo e soma 1 no contador primo
     else:
         return lista_primos(num, p + 1)
     
 
+
+#Função chama menu e pede o numero, com validação conforme enunciado
 def primosRecursiva():
     print("----------------------------------------------------------------")
     print("------------ Sequencia de Números Primos Recursiva -------------")
@@ -29,6 +36,7 @@ def primosRecursiva():
 
     conjunto_primos = lista_primos(num)
 
+    #imrpime o conjunto de numeros primos
     print(conjunto_primos)
 
     
